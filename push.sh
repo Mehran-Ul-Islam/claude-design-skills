@@ -2,7 +2,7 @@
 # Ship this repo to GitHub. Usage: ./push.sh [repo-url]
 # Needs git, plus either an authenticated `gh` CLI or credentials for the remote.
 set -euo pipefail
-REPO_URL="${1:-https://github.com/Mehrooons/design-skills.git}"
+REPO_URL="${1:-https://github.com/Mehran-Ul-Islam/design-skills.git}"
 NAME="$(basename "${REPO_URL%.git}")"
 OWNER="$(basename "$(dirname "${REPO_URL}")")"
 
