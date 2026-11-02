@@ -1,0 +1,37 @@
+/* Material layer. Depends on tokens/tokens.css being loaded. */
+.glass {
+  position: relative;
+  border: 1px solid var(--hairline);
+  border-top-color: var(--glass-edge); /* bright top edge: light catching the material */
+  background: var(--glass-bg-regular);
+  box-shadow: var(--shadow-regular);
+  -webkit-backdrop-filter: blur(var(--blur-regular)) saturate(var(--saturate-regular));
+  backdrop-filter: blur(var(--blur-regular)) saturate(var(--saturate-regular));
+  color: var(--ink);
+}
+.glass[data-thickness="thin"] {
+  background: var(--glass-bg-thin);
+  box-shadow: var(--shadow-thin);
+}
+.glass[data-thickness="thick"] {
+  background: var(--glass-bg-thick);
+  box-shadow: var(--shadow-thick);
+}
+/* Vibrancy: text on glass is a touch heavier with a small tracking bump. */
+.glass { font-weight: 500; letter-spacing: 0.005em; }
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass {
+    background: var(--surface) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+@media (prefers-contrast: more) {
+  .glass {
+    background: var(--surface) !important;
+    border-color: var(--ink) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}

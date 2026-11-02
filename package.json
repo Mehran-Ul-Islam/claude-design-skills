@@ -1,0 +1,15 @@
+{
+  "name": "design-skills",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Apple-HIG-grounded, Framer Motion-driven UI skills with a design-review audit.",
+  "scripts": {
+    "tokens": "node tokens/build-css.mjs",
+    "audit": "node design-review/audit.mjs ."
+  },
+  "peerDependencies": {
+    "framer-motion": ">=11",
+    "react": ">=18"
+  }
+}
