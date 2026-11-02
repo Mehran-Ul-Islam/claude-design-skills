@@ -25,6 +25,6 @@ Wire into a Vite + Tailwind project: add `tokens/tailwind.preset.js` as a preset
 ## Ship
 
 ```bash
-./push.sh                         # defaults to github.com/Mehran-Ul-Islam/design-skills
+./push.sh                         # defaults to github.com/Mehran-Ul-Islam/claude-design-skills
 ./push.sh https://github.com/you/other-repo.git
 ```
