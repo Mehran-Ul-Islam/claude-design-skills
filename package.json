@@ -6,7 +6,8 @@
   "description": "Apple-HIG-grounded, Framer Motion-driven UI skills with a design-review audit.",
   "scripts": {
     "tokens": "node tokens/build-css.mjs",
-    "audit": "node design-review/audit.mjs ."
+    "audit": "node design-review/audit.mjs .",
+    "package": "node scripts/package-skills.mjs"
   },
   "peerDependencies": {
     "framer-motion": ">=11",
